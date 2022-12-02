@@ -3,6 +3,7 @@ import React from "react";
 import Todo from "./toDo";
 
 function App() {
+  const [name, setName] = React.useState([]);
   return (
     <div className="App">
       <div className="flex m-2 justify-center">
