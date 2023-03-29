@@ -23,6 +23,7 @@ export const TaskProvider: React.FC<Props> = ({ children }) => {
   const [tasks, setTasks] = React.useState<string[]>([]);
   const addTask = () => {
     setTasks([...tasks, task]);
+    setTask("");
   };
   return (
     <taskContent.Provider value={{ task, setTask, tasks, setTasks, addTask }}>
@@ -31,4 +32,4 @@ export const TaskProvider: React.FC<Props> = ({ children }) => {
   );
 };
 
-export const TaskContent = useContext(taskContent);
+export const UseTaskContent = () => useContext(taskContent);

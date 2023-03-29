@@ -1,13 +1,17 @@
 import React from "react";
-type Props = {
-  item: string;
-};
-const list: React.FC<Props> = ({ item }) => {
+import { UseTaskContent } from "../context/taskContent";
+
+const list: React.FC = () => {
+  const { tasks } = UseTaskContent();
   return (
     <div>
-      <ul>
-        <li className="bg-slate-200 mt-2 rounded p-2">{item}</li>
-      </ul>
+      {tasks.map((task) => {
+        return (
+          <ul>
+            <li className="bg-slate-200 mt-2 rounded p-2">{task}</li>
+          </ul>
+        );
+      })}
     </div>
   );
 };

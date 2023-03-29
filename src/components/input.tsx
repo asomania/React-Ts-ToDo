@@ -1,20 +1,18 @@
 import React from "react";
+import { UseTaskContent } from "../context/taskContent";
 
-type Props = {
-  count: string;
-  setCount: React.Dispatch<React.SetStateAction<string>>;
-  addToList: () => void;
-};
-const input: React.FC<Props> = ({ count, setCount, addToList }) => {
+const input: React.FC = () => {
+  const { task, setTask, addTask } = UseTaskContent();
+
   return (
     <div className="flex justify-center gap-3">
       <input
         type="text"
-        value={count}
-        onChange={(e) => setCount(e.target.value)}
+        value={task}
+        onChange={(e) => setTask(e.target.value)}
         className="border flex justify-center"
       />
-      <button className="border bg-sky-500  p-1 rounded" onClick={addToList}>
+      <button className="border bg-sky-500  p-1 rounded" onClick={addTask}>
         Ekle
       </button>
     </div>
