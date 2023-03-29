@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+## V2 UPDATE 
+# Context Api Now available in #FeatureContext
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
