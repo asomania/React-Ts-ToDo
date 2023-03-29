@@ -1,3 +1,6 @@
+## V1 UPDATE 
+# TypeScript Now available 
+
 ## V2 UPDATE 
 # Context Api Now available in branch (#FeaturesContext)
 You can choose any version. I recommend Context
