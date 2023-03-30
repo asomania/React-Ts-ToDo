@@ -6,7 +6,7 @@
 You can choose any version. I recommend Context
 
 
-
+## HOW TO RUN PROJECT 
 
 ### `npm start`
 
